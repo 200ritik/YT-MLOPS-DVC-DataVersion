@@ -1,2 +1,18 @@
 1. create git repo done..
 2. create code.py and add code to it
+3. it commit before actual using the dvc
+4. now initiate dvc
+5. now do mkdir s3 command
+6. dvc remote add -d my remote s3 tells the dvc where to store the data
+7. dvc add data/ versioning of the files inside of teh data
+>>> if git tracked it initially so i pop up the error 
+>>> sol. is to take teh data versioning from the git and take it to the dvcignore
+
+8. again do dvc add data 
+dvc remote add -d myremote ./s3
+dvc commit and dvc push
+9. now make changes on code and check the changes on the dvc and git as well
+
+10. do git commit and push because we don,t want the git to track s3
+
+11. now make changes in the data
